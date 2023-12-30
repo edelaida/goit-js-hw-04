@@ -91,8 +91,11 @@ function calcAverageCalories(days) {
   for (const key of days) {
     ration += key.calories; 
     number += 1;
-  }
-  return (ration / number);
+  }   
+  if (number > 0) {
+     return (ration / number);
+  };
+     return number;
 }
 
 console.log(
